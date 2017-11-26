@@ -29,7 +29,7 @@ const MainNavigator = TabNavigator({
 
 const AppNavigator = StackNavigator({
     Home: {
-        screen: props => <MainNavigator navigation={props.navigation}/>,
+        screen: MainNavigator,
     },
     DeckView: {
         path: 'udacicards-deck/:deck',

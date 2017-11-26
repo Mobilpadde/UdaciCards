@@ -20,7 +20,7 @@ class Deck extends Component {
 
         return (
             <View style={styles.container}>
-                <TouchableNativeFeedback onPressed={to}>
+                <TouchableNativeFeedback onPress={to}>
                     <View>
                         <Text adjustFontSizeToFit={true} numberOfLines={1} style={styles.name}>{name.slice(0, 1).toUpperCase() + name.slice(1)}</Text>
                         <Text adjustFontSizeToFit={true} numberOfLines={1} style={styles.cards}>{cards || 0} cards</Text>
